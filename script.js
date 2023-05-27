@@ -48,8 +48,8 @@ init();
 btnRoll.addEventListener("click", function () {
   if (playing) {
     // 1. Generating  a random dice roll
-    // Math.random() * 6 - 0 és 5 között generál egy számot
     const dice = Math.trunc(Math.random() * 6) + 1;
+    // Math.random() * 6 - 0 és 5 között generál egy számot, hozzá kell még adnunk 1-et, hogy 1 és 6 között generáljon számot
 
     // 2. Display dice
     diceEl.classList.remove("hidden");
